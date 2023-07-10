@@ -1,0 +1,78 @@
+body {
+    font:normal 13px Lucida Grande, Helvetica, Arial;
+    background-color:#ededed;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #4094D9;
+  }
+  
+  .shopping-cart {
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 200px;
+    height: 54px;
+    margin: -26px -100px;
+    border-radius: 4px;
+    background-color: #009D5F;
+    border: 1px solid #007A46;
+    color: #FFF;
+    background-color: #009052;
+    background-repeat: repeat-x;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00AA6C), to(#009052));
+  background-image: -webkit-linear-gradient(#00AA6C, #009052);
+  background-image: -moz-linear-gradient(#00AA6C, #009052);
+  background-image: -o-linear-gradient(#00AA6C, #009052);
+  background-image: linear-gradient(#00AA6C, #009052);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    
+  }
+  .shopping-cart .icon-basket {
+    display:inline-block;
+    margin: 13px 0 0 10px;
+    padding-left: 15px;
+    line-height: 14px;
+  }
+  .shopping-cart .urun {
+    display: block;
+    width: 82px;
+    height: 18px;
+    padding-top: 8px;
+    border: 1px solid #007A46;
+    text-align: center;
+    background-color: #008052;
+  }
+  .shopping-cart .total {
+    position: absolute;
+    display: block;
+    width: 82px;
+    height: 21px;
+    padding-top: 5px;
+    border: 1px solid #007A46;
+    text-align: center;
+    background-color: #009052;
+    background-repeat: repeat-x;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00AA6C), to(#009052));
+  background-image: -webkit-linear-gradient(#00AA6C, #009052);
+  background-image: -moz-linear-gradient(#00AA6C, #009052);
+  background-image: -o-linear-gradient(#00AA6C, #009052);
+  background-image: linear-gradient(#00AA6C, #009052);
+    transition:all .2s;
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  .wrap {
+    position: absolute;
+    right: 10px;
+    top: 13px; 
+    perspective:82;
+  }
+  .shopping-cart:hover .total {
+    transform: rotate3d(1, 0, 0, 72deg) translate3d(0,5px,12px);
+    border-bottom-color:#000;
+  }
+  .shopping-cart:hover .urun {
+    box-shadow:inset 0px 13px 8px -4px rgba(0,0,0,.2);
+  }
